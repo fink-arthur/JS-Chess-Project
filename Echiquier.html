@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Echiquier</title>
+
+<script src="./ech.js"></script>
+<style type="text/css"></style>
+</head>
+
+<body onclick="deselect()">
+
+
+<table summary="échiquier" id="echiquier" border="1">
+	
+</table>
+
+<p>C'est le tour du <span id="tour">Blanc</span>.</p>
+<button onclick="save()">Sauvegarder</button>
+<button onclick="load()">Charger</button>
+<button onclick="newMatch()">Nouveau Match</button>
+
+<script>
+	var FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+	afficher();
+</script>
+
+</body>
+</html>
